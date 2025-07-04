@@ -1,0 +1,90 @@
+$primary-color-white:#fff;
+$background-color:#222222;
+$primary-font-size:12px;
+$secondary-text-color:#ffffff99;
+
+.gradient-text-color{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body{
+    background-color: $background-color;
+}
+a {
+    text-decoration:none;
+}
+.navbar{
+padding:3% 1%;
+
+    .nav_items{
+        border:1px solid #ffffff52;
+        border-radius: 50px;
+        padding: 10px 15px;
+        background: #000; 
+
+
+
+    .navbar_logo{
+        img{
+            width: 60px;
+        }
+       
+    } 
+    .navbar_links{
+        a{
+            color:$primary-color-white;
+            margin: 0px 10px;
+            font-size: $primary-font-size;
+        }
+        
+    } 
+
+    }
+    .navbar_button{
+        color:$primary-color-white;
+        background: linear-gradient(90deg,rgba(227, 88, 188, 1) 0%, rgba(98, 44, 181, 1) 100%);
+        padding: 10px 20px;
+        border-radius: 30px;
+
+    }
+
+
+}
+.header_section{
+ background-image: url("../images/hero-background-img.png");
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero_section{
+   
+    .hero_left{
+        h1{
+            font-size: 100px;;
+            color: $primary-color-white;
+            @extend .gradient-text-color;
+           
+        }
+        p{
+            color: $secondary-text-color;
+        }
+    }
+    .hero_right{
+    position: relative;
+        .hero-imge-circle{
+            position: absolute;
+            left: 12%;
+            width: 400px;
+            right: 0;
+            top: 25%;
+        }
+         .portfolio_image{
+            width: 100%;
+            max-width: 300px;
+            position: relative;
+            z-index: 99;
+        }
+        }
+       
+}
