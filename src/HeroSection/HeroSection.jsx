@@ -1,6 +1,7 @@
 import React from 'react'
 import Name from './Name'
 import PortfolioImage from './PortfolioImage'
+import HeroChild from './HeroChild'
 
 function HeroSection() {
   return (
@@ -15,6 +16,7 @@ function HeroSection() {
         </div>
       </div>
     </div>
+    
     </>
   )
 }

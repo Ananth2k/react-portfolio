@@ -10,7 +10,7 @@ function NavBar() {
          <img src={PortfolioMainText} alt="Sesu Text" />
     </div>
     <div className="d-flex">
-    <nav className="navbar_links">
+    <nav className="navbar_links d-flex align-items-center">
         <a href="about">About</a>
         <a href="projects">Projets</a>
         <a href="contact">Contact</a>

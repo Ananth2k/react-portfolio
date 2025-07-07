@@ -1,12 +1,21 @@
 $primary-color-white:#fff;
-$background-color:#222222;
+$background-color:#000000;
 $primary-font-size:12px;
 $secondary-text-color:#ffffff99;
+$section_title:80px;
+$section_padding:5% 0%;
 
 .gradient-text-color{
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.gradient-btn{
+    background: linear-gradient(90deg, rgb(227, 88, 188) 0%, rgb(98, 44, 181) 100%);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color:$primary-color-white;
+    border:0;
 }
 
 body{
@@ -15,6 +24,20 @@ body{
 a {
     text-decoration:none;
 }
+p{
+    font-size: $primary-font-size;
+    color:$secondary-text-color;
+}
+.section{
+    padding: $section_padding;
+    background-color: $background-color;
+  
+  h2{
+        font-size:$section_title;
+        color: $primary-color-white;
+    }
+}
+
 .navbar{
 padding:3% 1%;
 
@@ -43,10 +66,8 @@ padding:3% 1%;
 
     }
     .navbar_button{
-        color:$primary-color-white;
-        background: linear-gradient(90deg,rgba(227, 88, 188, 1) 0%, rgba(98, 44, 181, 1) 100%);
-        padding: 10px 20px;
-        border-radius: 30px;
+        
+        @extend .gradient-btn;
 
     }
 
@@ -87,4 +108,41 @@ padding:3% 1%;
         }
         }
        
+}
+.hero_child{
+        border-top: 1px solid #ffffff8a;
+        border-bottom: 1px solid #ffffff8a;
+    position: relative;
+    z-index: 99;
+    background: #000000;
+.d-flex{
+    justify-content: space-around;
+    padding: 2% 0;
+   h2 {
+ @extend .gradient-text-color;
+    }
+
+}
+
+}
+
+.about_section{
+     background-image: url("../images/about-bg.png");     
+    background-repeat: no-repeat;
+    background-position: right;
+
+    
+    .about-left-img{
+            width: 100%;
+    max-width: 300px;
+
+    }
+    h3{
+    font-size: 50px;
+    font-weight:600;
+    color:$primary-color-white;
+    }
+    button{
+        @extend .gradient-btn;
+    }
 }

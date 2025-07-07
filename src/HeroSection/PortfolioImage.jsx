@@ -5,7 +5,6 @@ function PortfolioImage() {
   return (
     <>
     <div>
-         <img src={Hero_Circle_Image} alt="Sesu Image" className="hero-imge-circle" />
          <img src={Portfolio_Image} alt="Sesu Image" className="portfolio_image" />
     </div>
     </>
